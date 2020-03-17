@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="20dp">
+
+       <TextView
+           android:layout_marginTop="40dp"
+           android:textColor="#2c6ca9"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="KALKULATOR"
+           android:textStyle="bold"
+           android:textSize="40dp"
+           android:gravity="center"/>
+       <EditText
+           android:id="@+id/bil1"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"/>
+       <EditText
+           android:id="@+id/bil2"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:layout_marginTop="37dp"/>
+      <LinearLayout
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="30dp"
+          >
+          <Button
+              android:background="#2c6ca9"
+              android:textColor="#ffffff"
+              android:id="@+id/jumlah"
+              android:textSize="25dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="+" />
+
+          <Button
+              android:layout_marginLeft="20dp"
+              android:background="#2c6ca9"
+              android:textColor="#ffffff"
+              android:id="@+id/kurang"
+              android:textSize="25dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="-" />
+      </LinearLayout>
+
+       <LinearLayout
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           >
+           <Button
+               android:background="#2c6ca9"
+               android:textColor="#ffffff"
+               android:id="@+id/kali"
+               android:textSize="25dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="x" />
+
+           <Button
+               android:layout_marginLeft="20dp"
+               android:background="#2c6ca9"
+               android:textColor="#ffffff"
+               android:id="@+id/bagi"
+               android:textSize="25dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" / " />
+       </LinearLayout>
+       <TextView
+           android:id="@+id/hasil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Hasil"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:textSize="30dp"
+           android:layout_marginTop="70dp"/>
+   </LinearLayout>
+</RelativeLayout>
